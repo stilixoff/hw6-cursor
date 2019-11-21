@@ -61,8 +61,7 @@
 @font-face {
 	font-family: 'Bebas Neue';
 	src: url('/fonts/BebasNeueBold.eotBebasNeueBold.eot');
-	src: local('Bebas Neue Bold'), local('BebasNeueBold'),
-		url('/fonts/BebasNeueBold.eot') format('embedded-opentype'),
+	src: url('/fonts/BebasNeueBold.eot') format('embedded-opentype'),
 		url('/fonts/BebasNeueBold.woff') format('woff'),
 		url('/fonts/BebasNeueBold.ttf') format('truetype');
 	font-weight: bold;
@@ -72,8 +71,7 @@
 @font-face {
 	font-family: 'Bebas Neue';
 	src: url('/fonts/BebasNeueLight.eot');
-	src: local('Bebas Neue Light'), local('BebasNeueLight'),
-		url('/fonts/BebasNeueLight.eot') format('embedded-opentype'),
+	src: url('/fonts/BebasNeueLight.eot') format('embedded-opentype'),
 		url('/fonts/BebasNeueLight.woff') format('woff'),
 		url('/fonts/BebasNeueLight.ttf') format('truetype');
 	font-weight: 300;
@@ -83,8 +81,7 @@
 @font-face {
 	font-family: 'Bebas Neue';
 	src: url('/fonts/BebasNeue-Thin.eotBebasNeue-Thin.eot');
-	src: local('Bebas Neue Thin'), local('BebasNeue-Thin'),
-		url('/fonts/BebasNeue-Thin.eot') format('embedded-opentype'),
+	src: url('/fonts/BebasNeue-Thin.eot') format('embedded-opentype'),
 		url('/fonts/BebasNeue-Thin.woff') format('woff'),
 		url('/fonts/BebasNeue-Thin.ttf') format('truetype');
 	font-weight: 100;

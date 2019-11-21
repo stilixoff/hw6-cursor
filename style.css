@@ -1,5 +1,119 @@
 body {
-    font-family: 'Bebas Neue Book';
+    font-family: 'Gotham Pro';
+    background-color: #f0ebe8;
+}
 
-    font-size: 100px;
+/* header start */
+
+header, main {
+    max-width: 1554px;
+    margin: auto;
+}
+
+header>section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 110px;
+    margin: 0px 35px 0px 35px;
+}
+
+.tagline {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.6em;
+}
+
+.tagline>h2>a {
+    font-family: 'Bebas Neue';
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333333;
+}
+
+.tagline>p {
+    color: #d4416a
+}
+
+nav {
+    flex-grow: 1;
+}
+
+nav>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 13%;
+    margin-right: 13%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333333;
+}
+
+nav a::after {
+    display: block;
+    position: relative;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #d4416a;
+    content: "";
+    transition: width 0.3s ease-out;
+}
+
+nav a:active {
+    color: #d4416a;
+}
+
+nav a:active:after {
+	width: 100%;
+}
+
+.phone-number {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 40%;
+    box-sizing: border-box;
+}
+
+.phone-number>a {
+    position: relative;
+    color: #d4416a;
+    text-decoration: none;
+}
+
+.phone-number>a::before {
+    position: absolute;
+    content: " ";
+    background: url(/img/phone-call.png) center no-repeat;
+    width: 1.15em;
+    height: 1.15em;
+    left: -2em;
+}
+
+/* header end */
+
+/* section product-description start */
+
+.product-description {
+    position: relative;
+    background: url(/img/woman.png) center no-repeat;
+    width: 100%;
+    height: 611px;
+}
+
+.product-description::before {
+    position: absolute;
+    content: " ";
+    background: url(/img/waveUp.png) center no-repeat;
+    width: 100%;
+    height: 1em;
+    top: 0px;
+    left: 0px;
 }
