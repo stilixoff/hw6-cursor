@@ -15,7 +15,8 @@ header>section {
     flex-direction: row;
     align-items: center;
     height: 110px;
-    margin: 0px 35px 0px 35px;
+    margin-left: 2.2%;
+    margin-right: 2.2%;
 }
 
 .tagline {
@@ -44,9 +45,11 @@ nav {
 nav>ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-left: 23%;
-    margin-right: 23%;
+    justify-content: space-evenly;
+}
+
+nav>ul>li {
+    text-transform: uppercase;
 }
 
 nav a {
@@ -79,13 +82,17 @@ nav a:active:after {
     justify-content: space-between;
     box-sizing: border-box;
     height: 40%;
-    box-sizing: border-box;
+    width: auto;
 }
 
 .phone-number>a {
     position: relative;
-    color: #d4416a;
+    color: inherit;
     text-decoration: none;
+}
+
+.phone-number>a>span {
+    font-family: 'Gotham Pro Medium';
 }
 
 .phone-number>a::before {
@@ -103,7 +110,11 @@ nav a:active:after {
 
 .product-description {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: url(img/woman.png) center no-repeat;
+    
     width: 100%;
     height: 611px;
 }
@@ -123,7 +134,62 @@ nav a:active:after {
     content: " ";
     background: url(img/waveDown.png) center no-repeat;
     width: 100%;
-    height: 1em;
+    height: 1.2em;
     bottom: 0px;
     left: 0px;
+}
+
+.description-about-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    height: 68%;
+}
+
+.description-about-product>h1 {
+    font-family: "Bebas Neue";
+    font-weight: bold;
+    font-size: 3.4em;
+}
+
+.description-about-product>h1>span {
+    color: #d4416a;
+}
+
+.description-about-product>p {
+    font-size: 1.3em;
+    width: 70%;
+    line-height: 2.2em;
+}
+
+.description-about-product>button {
+    width: 16em;
+    height: 3.5em;
+    font-size: 1.2em;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    background-color: #d4416a;
+    border-radius: 5px;
+    border-bottom: 5px solid  #ab3456;
+    cursor: pointer;
+    outline: none;
+}
+
+.description-about-product>button>span {
+    font-weight: bold;
+}
+
+.description-about-product>button:active {
+    border-bottom: none;
+    
+}
+
+.foto-product {
+    display: flex;
+    align-items: flex-start;
+    width: 50%;
 }
