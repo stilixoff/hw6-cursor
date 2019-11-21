@@ -91,7 +91,7 @@ nav a:active:after {
 .phone-number>a::before {
     position: absolute;
     content: " ";
-    background: url(/img/phone-call.png) center no-repeat;
+    background: url(img/phone-call.png) center no-repeat;
     width: 1.15em;
     height: 1.15em;
     left: -2em;
