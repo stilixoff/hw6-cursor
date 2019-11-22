@@ -228,21 +228,58 @@ nav a:active:after {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 400px;
+    justify-content: space-evenly;
+    min-height: 735px;
+    box-sizing: border-box;
 }
 
 .brend-description>h2 {
     font-family: 'Gotham Pro Bold';
-    font-size: 2em;
+    font-size: 3em;
     color: #d4416a;
     text-transform: uppercase;
 }
+
+.description-about-brend {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+
+.description-about-brend-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    width: 70%;
+}
+
+.description-about-brend-text>p {
+    width: 78%;
+    font-size: 1.2em;
+    line-height: 2.2em;
+    text-align: left;
+    margin-bottom: 10%;
+}
+
+.image-lip {
+    position: absolute;
+    align-self: flex-end;
+    
+}
+
+
+
+
 
 
 
 @media (max-width: 1366px) {
     .description-about-product>h1 {
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
     
