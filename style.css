@@ -248,6 +248,10 @@ nav a:active:after {
     box-sizing: border-box;
 }
 
+.description-about-brend>img {
+    align-self: baseline;
+}
+
 .description-about-brend-text {
     display: flex;
     flex-direction: column;
@@ -260,9 +264,13 @@ nav a:active:after {
 .description-about-brend-text>p {
     width: 78%;
     font-size: 1.2em;
-    line-height: 2.2em;
+    line-height: 2em;
     text-align: left;
     margin-bottom: 10%;
+}
+
+.description-about-brend-text>p>span {
+    font-weight: bold;
 }
 
 .image-lip {
