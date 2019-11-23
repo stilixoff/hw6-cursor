@@ -11,12 +11,14 @@ header, main {
 }
 
 header>section {
+    max-width: 1490px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     height: 110px;
-    margin-left: 2.2%;
-    margin-right: 2.2%;
+    margin: auto;
+    padding: 0 70px;
 }
 
 .tagline {
@@ -242,35 +244,36 @@ nav a:active:after {
 
 .description-about-brend {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     box-sizing: border-box;
-}
-
-.description-about-brend>img {
-    align-self: baseline;
+    
 }
 
 .description-about-brend-text {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-self: stretch;
-    width: 70%;
+    max-width: 1160px;
 }
 
 .description-about-brend-text>p {
-    width: 78%;
-    font-size: 1.2em;
+    max-width: 740px;
+    font-size: 1em;
     line-height: 2em;
     text-align: left;
-    margin-bottom: 10%;
+    margin-left: 1.5vw;
 }
 
 .description-about-brend-text>p>span {
     font-weight: bold;
+}
+
+.description-about-brend>.order-button {
+    margin-left: 15vw;
 }
 
 .image-lip {
@@ -287,7 +290,7 @@ nav a:active:after {
 
 @media (max-width: 1366px) {
     .description-about-product>h1 {
-        font-size: 2em;
+        font-size: 2.5em;
     }
 
     
@@ -303,4 +306,32 @@ nav a:active:after {
         margin-left: 2.5em;
     }
 
+}
+
+@media (max-width: 1024px) {
+    
+    html {
+        font-size: 14px;
+    }
+    
+    header>section {
+        height: 150px;
+    }
+
+    nav {
+        order: 3;     
+    }
+
+    nav>ul {
+        justify-content: space-between;
+    }
+
+    .tagline {
+        flex-grow: 1;
+    }
+
+    .phone-number {
+        width: 50%;
+        align-items: flex-end;
+    }
 }
