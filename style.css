@@ -21,6 +21,10 @@ header>section {
     padding: 0 70px;
 }
 
+.logo-box {
+    display: flex;
+}
+
 .tagline {
     box-sizing: border-box;
     display: flex;
@@ -102,6 +106,7 @@ nav a:active:after {
     position: absolute;
     content: " ";
     background: url(img/phone-call.png) center no-repeat;
+    background-size: contain;
     width: 1.15em;
     height: 1.15em;
     left: -2em;
@@ -116,11 +121,13 @@ nav a:active:after {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(img/woman.png) center no-repeat;
-    /* background-color:#e1e6cf; */
+    /* background: url(img/woman-bg.png) right no-repeat; */
+    background-size: contain;
+    background-color:#e1e6cf;
     width: 100%;
     height: 611px;
 }
+
 
 .product-description::before {
     position: absolute;
@@ -143,6 +150,7 @@ nav a:active:after {
 }
 
 .description-about-product {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -151,13 +159,16 @@ nav a:active:after {
     height: 68%;
 }
 
+.description-about-product>img {
+    display: none;
+}
+
+
 .description-about-product>h1 {
     font-family: "Bebas Neue";
     font-weight: bold;
     font-size: 3.4em;
 }
-
-
 
 .description-about-product>h1>span {
     color: #d4416a;
@@ -183,6 +194,7 @@ nav a:active:after {
     border-bottom: 5px solid  #ab3456;
     cursor: pointer;
     outline: none;
+    box-sizing: border-box;
 }
 
 .order-button>span {
@@ -196,8 +208,8 @@ nav a:active:after {
 
 .tag-price {
     position: absolute;
-    top: -2em;
-    left: -2em;
+    top: 15%;
+    left: -7%;
 }
 
 .price {
@@ -220,7 +232,11 @@ nav a:active:after {
     position: relative;
     display: flex;
     align-items: flex-start;
+    justify-content: center;
     width: 50%;
+    height: 100%;
+    background: url(img/woman-lip.png) center no-repeat;
+    background-size: contain;
     /* height: 100%; */
 }
 
@@ -243,6 +259,10 @@ nav a:active:after {
     font-size: 3em;
     color: #d4416a;
     text-transform: uppercase;
+}
+
+.description-about-product>.tag-price {
+    display: none;
 }
 
 .description-about-brend {
@@ -282,7 +302,8 @@ nav a:active:after {
 .image-lip {
     position: absolute;
     align-self: flex-end;
-    
+    bottom: 20px;
+    right: 0px;
 }
 
 .brend-description::after {
@@ -320,6 +341,12 @@ nav a:active:after {
 
 }
 
+@media (max-width: 1280px) {
+    .image-lip {
+        display: none;
+    }
+}
+
 @media (max-width: 1024px) {
     
     html {
@@ -352,13 +379,13 @@ nav a:active:after {
         height: 430px;
     }
 
-    .product-description:before {
+    /* .product-description:before {
         top: 7px;
     }
 
     .product-description:after {
         bottom: 7px;
-    }
+    } */
 
     .description-about-product>p {
         font-size: 1em;
@@ -383,10 +410,6 @@ nav a:active:after {
         width: 147px;
     }
 
-    .tag-price {
-        top: -1em;
-    }
-
     .tag-price>img {
         width: 50%;
     }
@@ -406,4 +429,119 @@ nav a:active:after {
     .description-about-brend>.order-button {
         margin-top: 10px;
     }
+}
+
+@media (max-width: 320px) {
+    header>section {
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: ;
+        padding: 0px;
+        height: 115px;
+        padding: 20px 0 20px 0;
+    }
+    
+    nav {
+        display: none;
+    }
+
+    .phone-number {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        font-size: 0.9em;
+    }
+
+    .phone-number>a::before {
+        display: none;
+    }
+
+    .product-description {
+        flex-direction: column;
+        height: 620px;
+        justify-content: flex-start;
+    }
+
+    .description-about-product {
+        width: 100%;
+        height: auto;
+        /* justify-content: flex-start; */
+        padding-top: 55px;
+    }
+
+    .foto-product {
+        display: none;
+    }
+
+    .description-about-product>h1 {
+        font-size: 1.5em;
+    }
+
+    .description-about-product>img {
+        display: block;
+        width: 40%;
+        margin-top: 25px;
+    }
+
+    .description-about-product>p {
+        line-height: 1.5em;
+        text-align: center;
+        order: 3;
+        margin-top: 25px;
+        width: 90%;
+    }
+
+    .description-about-product>.order-button {
+        margin-top: 20px;
+        display: block;
+        min-height: 3.5em;
+    }
+
+    .description-about-product>.tag-price {
+        display: block;
+        position: absolute;
+        left: 22%;
+    }
+    
+    
+
+    .brend-description {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 740px;
+        justify-content: flex-start;
+    }
+
+    .description-about-brend, 
+    .description-about-brend-text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .brend-description>h2 {
+        font-size: 1.2em;
+        margin-top: 25px;
+    }
+
+    .description-about-brend-text>img {
+        width: 140px;
+        margin-top: 25px;
+    }
+
+    .description-about-brend-text>p {
+        width: 90%;
+        line-height: 2em;
+        text-align: center;
+        margin-top: 25px;
+        margin-left: 0;
+    }
+
+    .description-about-brend>.order-button {
+        margin: 25px 0 0 0;
+    }
+
+
+
 }
