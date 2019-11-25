@@ -15,6 +15,7 @@ header>section {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     height: 110px;
     margin: auto;
@@ -431,14 +432,160 @@ nav a:active:after {
     }
 }
 
+@media (max-width: 890px) {
+    header>section {
+        padding: 0 1vw 0 1vw;
+    }
+
+    .description-about-product>h1 {
+        font-size: 3.5vw;
+    }
+
+    .description-about-product>p {
+        font-size: 1.7vw;
+    }
+
+    .brend-description>h2 {
+        font-size: 3.5vw;
+    }
+
+    .description-about-brend-text>p {
+        font-size: 1.7vw;
+    }
+
+}
+
+@media (max-width: 720px) {
+    .tag-price {
+        top: 13vw;
+    }
+
+    .product-description {
+        flex-direction: column;
+        height: 100%;
+        justify-content: flex-start;
+    }
+
+    .description-about-product {
+        width: 100%;
+        height: auto;
+        padding-top: 55px;
+    }
+
+    .foto-product {
+        display: none;
+    }
+
+    .description-about-product>h1 {
+        font-size: 6.5vw;
+    }
+
+    .description-about-product>img {
+        display: block;
+        width: 25vw;
+        margin-top: 25px;
+    }
+
+    .description-about-product>p {
+        font-size: 3vw;
+        line-height: 4vw;
+        text-align: center;
+        order: 3;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        width: 90%;
+    }
+
+    .description-about-product>.order-button {
+        margin-top: 20px;
+        display: block;
+        min-height: 3.5em;
+    }
+
+    .description-about-product>.tag-price {
+        display: block;
+        position: absolute;
+        top: 19%;
+        left: 32vw;
+    }
+    
+    
+
+    .brend-description {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: flex-start;
+    }
+
+    .description-about-brend, 
+    .description-about-brend-text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .brend-description>h2 {
+        font-size: 5.5vw;
+        margin-top: 25px;
+    }
+
+    .description-about-brend-text>img {
+        width: 45vw;
+        margin-top: 25px;
+    }
+
+    .description-about-brend-text>p {
+        width: 90%;
+        font-size: 3vw;
+        line-height: 4vw;
+        text-align: center;
+        margin-top: 25px;
+        margin-left: 0;
+    }
+
+    .description-about-brend>.order-button {
+        margin: 25px 0 30px 0;
+    }
+
+}
+
+
+@media (max-width: 520px) {
+    header>section {
+        box-sizing: border-box;
+        justify-content: center;
+        height: 100%;
+        margin: 2vw 0 2vw 0;
+    }
+
+    .logo-box {
+        margin-bottom: 4vw;
+    }
+    
+    nav {
+        display: none;
+    }
+
+    .phone-number {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        font-size: 0.9em;
+    }
+
+    .phone-number>a::before {
+        display: none;
+    }
+}
+
+
+
 @media (max-width: 320px) {
     header>section {
         box-sizing: border-box;
         justify-content: center;
-        align-items: ;
-        padding: 0px;
-        height: 115px;
-        padding: 20px 0 20px 0;
     }
     
     nav {
@@ -485,6 +632,7 @@ nav a:active:after {
 
     .description-about-product>p {
         line-height: 1.5em;
+        font-size: 5vw;
         text-align: center;
         order: 3;
         margin-top: 25px;
@@ -509,7 +657,7 @@ nav a:active:after {
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 740px;
+        height: 100%;
         justify-content: flex-start;
     }
 
@@ -532,6 +680,7 @@ nav a:active:after {
 
     .description-about-brend-text>p {
         width: 90%;
+        font-size: 4vw;
         line-height: 2em;
         text-align: center;
         margin-top: 25px;
@@ -539,9 +688,6 @@ nav a:active:after {
     }
 
     .description-about-brend>.order-button {
-        margin: 25px 0 0 0;
+        margin: 25px 0 35px 0;
     }
-
-
-
 }
