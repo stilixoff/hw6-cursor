@@ -122,7 +122,6 @@ nav a:active:after {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background: url(img/woman-bg.png) right no-repeat; */
     background-size: contain;
     background-color:#e1e6cf;
     width: 100%;
@@ -380,14 +379,6 @@ nav a:active:after {
         height: 430px;
     }
 
-    /* .product-description:before {
-        top: 7px;
-    }
-
-    .product-description:after {
-        bottom: 7px;
-    } */
-
     .description-about-product>p {
         font-size: 1em;
         height: 50%;
@@ -612,7 +603,6 @@ nav a:active:after {
     .description-about-product {
         width: 100%;
         height: auto;
-        /* justify-content: flex-start; */
         padding-top: 55px;
     }
 
