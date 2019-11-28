@@ -589,6 +589,10 @@ nav a:active:after {
 
 
 @media (max-width: 320px) {
+    body {
+        min-width: 320px;
+    }
+    
     header>section {
         box-sizing: border-box;
         justify-content: center;
