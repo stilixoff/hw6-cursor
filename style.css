@@ -76,11 +76,11 @@ nav a::after {
     transition: width 0.3s ease-out;
 }
 
-nav a:active {
+nav a:hover {
     color: #d4416a;
 }
 
-nav a:active:after {
+nav a:hover:after {
 	width: 100%;
 }
 
@@ -216,7 +216,7 @@ nav a:active:after {
     font-weight: bold;
 }
 
-.order-button:active {
+.order-button:hover {
     border-bottom: none;
     
 }
